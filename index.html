@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/vendor/bootstrap-5.2.0-dist/css/bootstrap.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav class="navbar navbar-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand">SkillMovie</a>
+          <form class="d-flex" role="search" id="form">
+            <input class="form-control me-2" type="search" placeholder="Search" id="search" aria-label="Search">
+            <button class="btn btn-outline-light" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
+
+      
+      <div class="container-fluid content">
+        <div class="container">
+               <div class="row " id="album">
+                    <!-- <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="card">
+                            <img src="${poster_path ? IMG_URL + poster_path : "/ ujr5pztc1oitbe7ViMUOilFaJ7s.jpg"}" class="card-img-top" alt="${title}">
+                            <div class="card-body">
+                            <h5 class="card-title">${title}</h5>
+                            <p class="card-text">${overview}</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div> -->
+               </div>
+        </div>
+    </div>
+      <!-- <main id="album"></main> -->
+      
+      <!-- <nav class="movie-pagination">
+        <ul class="pagination">
+          <li class="page-item disabled">
+            <a class="page-link" id="prev">Previous</a>
+          </li>
+          <li class="page-item active"><a class="page-link" id="current" href="#">1</a></li>
+          <li class="page-item">
+            <a class="page-link" id="next" href="#">Next</a>
+          </li>
+        </ul>
+      </nav> -->
+
+      <div class="container-fluid pagination">
+        <div class="page" id="prev">Previous Page</div>
+        <div class="current" id="current">1</div>
+        <div class="page" id="next">Next Page</div>
+    </div>
+    
+    <script src="script.js"></script>
+    <script src="/vendor/bootstrap-5.2.0-dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>
