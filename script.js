@@ -109,14 +109,8 @@ function tampilkanMovie(data){
 
 }
 
-// //Inputan user
-// const inputUser ='kid'
 
-// //Search
-// fetch(`https://api.themoviedb.org/3/search/movie?api_key=74d8f8c08e0bccdbff50899175084325&query=${inputUser}&page=1`)
-// .then(response => response.json())
-// .then(data => console.log(data.results)) 
-
+// Search
 form.addEventListener('submit',(e) => {
     e.preventDefault()
 
@@ -124,11 +118,13 @@ form.addEventListener('submit',(e) => {
 
     if(searchValue ){
         getMovie(searchURL+'&query='+searchValue)
+    }else{
+        getMovie(API_URL);
     }
-
 })
 
-//fungsi next & prev page
+
+// Next & prev page
 prev.addEventListener('click', () => {
     if(prevPage > 0){
       pageCall(prevPage);
